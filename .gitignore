@@ -1,0 +1,25 @@
+# Local Android and cloud settings
+**/local.properties
+**/google-services.json
+**/service-account*.json
+**/*firebase-adminsdk*.json
+keystore.properties
+*.jks
+*.keystore
+.env
+.env.*
+!.env.example
+
+# Build/cache
+.gradle/
+.idea/
+**/build/
+*.iml
+*.apk
+*.aab
+*.log
+*.hprof
+.externalNativeBuild/
+.cxx/
+.DS_Store
+Thumbs.db
