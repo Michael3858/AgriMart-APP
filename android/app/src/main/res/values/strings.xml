@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Small Shop</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_map">Map</string>
+    <string name="title_activity_maps">Maps</string>
+    <string-array name="classification">
+        <item>穀物</item>
+        <item>蔬菜</item>
+        <item>水果</item>
+        <item>家禽</item>
+        <item>乳製品</item>
+        <item>其他</item>
+    </string-array>
+    <string-array name="classification2">
+        <item>Crops</item>
+        <item>Vegetables</item>
+        <item>Fruits</item>
+        <item>Poultry</item>
+        <item>DairyProduct</item>
+        <item>Others</item>
+    </string-array>
+</resources>

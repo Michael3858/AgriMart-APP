@@ -1,0 +1,30 @@
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+        google()
+        mavenCentral()
+    }
+}
+
+// Optional private repository credentials belong in the user's Gradle home.
+def cardinalMavenUsername = providers.gradleProperty('AGRIMART_MAVEN_USERNAME').orElse('').get()
+def cardinalMavenPassword = providers.gradleProperty('AGRIMART_MAVEN_PASSWORD').orElse('').get()
+
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+        if (!cardinalMavenUsername.isEmpty() && !cardinalMavenPassword.isEmpty()) {
+            maven {
+                url "https://cardinalcommerceprod.jfrog.io/artifactory/android"
+                credentials {
+                    username = cardinalMavenUsername
+                    password = cardinalMavenPassword
+                }
+            }
+        }
+    }
+}
+rootProject.name = "Small Shop"
+include ':app'
