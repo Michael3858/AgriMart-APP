@@ -1,0 +1,41 @@
+package tw.cgu.b0929035.smallshop.utilities;
+
+public class Constants {
+    public static final String KEY_COLLECTION_USERS = "users";
+    public static final String KEY_EMAIL = "email";
+    public static final String KEY_NAME = "name";
+    public static final String KEY_PASSWORD = "password";
+    public static final String KEY_PHONE_NUMBER = "phoneNumber";
+    public static final String KEY_BIRTHDAY = "birthday";
+    public static final String KEY_GENDER = "gender";
+    public static final String KEY_ADDRESS = "address";
+    public static final String KEY_PREFERENCE = "chatPreference";
+    public static final String KEY_IS_SIGNED_IN = "isSignedIn";
+    public static final String KEY_USER_ID = "userId";
+    public static final String KEY_IMAGE = "image";
+    public static final String KEY_FCM_TOKEN = "fcmToken";
+    public static final String KEY_USER = "user";
+    public static final String KEY_COLLECTION_CHAT = "chat";
+    public static final String KEY_SENDER_ID = "senderId";
+    public static final String KEY_RECEIVER_ID = "receiverId";
+    public static final String KEY_MESSAGE = "message";
+    public static final String KEY_TIMESTAMP = "timestamp";
+    public static final String KEY_COLLECTION_CONVERSATIONS = "conversations";
+    public static final String KEY_SENDER_NAME = "senderName";
+    public static final String KEY_RECEIVER_NAME = "receiverName";
+    public static final String KEY_SENDER_IMAGE = "senderImage";
+    public static final String KEY_RECEIVER_IMAGE = "receiverImage";
+    public static final String KEY_LAST_MESSAGE = "lastMessage";
+    public static final String KEY_AVAILABILITY = "availability";
+    public static final String KEY_COLLECTION_PRODUCT = "products";
+    public static final String KEY_PRODUCT_ID = "productId";
+    public static final String KEY_PRODUCT_OWNER = "productOwner";
+    public static final String KEY_PRODUCT_IMAGE = "productImage";
+    public static final String KEY_PRODUCT_NAME = "productName";
+    public static final String KEY_PRODUCT_DESCRIPTION = "productDescription";
+    public static final String KEY_PRODUCT_PRICE = "productPrice";
+    public static final String KEY_PRODUCT_ACCOUNT = "productAccount";
+    public static final String KEY_PRODUCT_CLASSIFIABLE = "productClass";
+    public static final String KEY_PRODUCT_TRADE = "productTrade";
+    public static final String KEY_PRODUCT_TIME = "productTime";
+}

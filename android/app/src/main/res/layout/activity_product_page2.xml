@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffe0"
+    android:scrollbars="vertical"
+    tools:context=".ProductPage2">
+
+    <TextView
+        android:id="@+id/txv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="商品詳情"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="#33ffff"/>
+
+    <ImageButton
+        android:id="@+id/back"
+        android:layout_width="50dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toTopOf="@+id/txv"
+        app:layout_constraintBottom_toBottomOf="@id/txv"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_margin="5dp"
+        android:src="@drawable/back"
+        android:background="#33ffff"
+        android:scaleType="centerInside"/>
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/txv"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="30dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/Photo"
+                android:layout_width="match_parent"
+                android:layout_height="350dp"
+                android:layout_gravity="center"
+                android:layout_margin="20dp"
+                android:scaleType="centerInside" />
+
+            <TextView
+                android:id="@+id/Product"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="商品:"
+                android:textSize="35sp"
+                android:textColor="#000000"
+                android:layout_gravity="left"
+                android:gravity="left"
+                android:layout_margin="20dp"/>
+
+            <TextView
+                android:id="@+id/Seller"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="賣家:"
+                android:textSize="35sp"
+                android:textColor="#000000"
+                android:layout_gravity="left"
+                android:gravity="left"
+                android:layout_margin="20dp"/>
+
+            <TextView
+                android:id="@+id/Price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="價格:"
+                android:textSize="35sp"
+                android:textColor="#000000"
+                android:layout_gravity="left"
+                android:gravity="left"
+                android:layout_margin="20dp"/>
+
+            <TextView
+                android:id="@+id/Time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="商品上架時間:"
+                android:textSize="35sp"
+                android:textColor="#000000"
+                android:layout_gravity="left"
+                android:gravity="left"
+                android:layout_margin="20dp"/>
+
+            <TextView
+                android:id="@+id/Deal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="交易方式:"
+                android:textSize="35sp"
+                android:textColor="#000000"
+                android:layout_gravity="left"
+                android:gravity="left"
+                android:layout_margin="20dp"/>
+
+            <TextView
+                android:id="@+id/Info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="詳細資訊:"
+                android:textSize="35sp"
+                android:textColor="#000000"
+                android:layout_gravity="left"
+                android:gravity="left"
+                android:layout_margin="20dp"/>
+
+            <Button
+                android:id="@+id/Remove"
+                android:layout_width="170dp"
+                android:layout_height="70dp"
+                android:text="下架商品"
+                android:textSize="30sp"
+                android:textColor="#ffffff"
+                android:background="#7b68ee"
+                android:layout_gravity="center"
+                android:layout_margin="20dp"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

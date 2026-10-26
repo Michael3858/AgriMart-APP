@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffe0"
+    tools:context=".F1Fragment">
+
+    <EditText
+        android:id="@+id/SearchBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="8"
+        android:hint="請輸入欲搜尋的商品"
+        android:singleLine="true"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="5dp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="10dp"
+        android:textSize="23sp" />
+
+    <ImageButton
+        android:id="@+id/Search"
+        android:layout_width="40dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toEndOf="@id/SearchBar"
+        app:layout_constraintBottom_toBottomOf="@id/SearchBar"
+        app:layout_constraintTop_toTopOf="@id/SearchBar"
+        android:scaleType="centerInside"
+        android:background="#ffffe0"
+        android:src="@drawable/search"/>
+
+    <ImageButton
+        android:id="@+id/Talk"
+        android:layout_width="40dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toEndOf="@id/Search"
+        android:layout_marginStart="5dp"
+        app:layout_constraintBottom_toBottomOf="@id/SearchBar"
+        app:layout_constraintTop_toTopOf="@id/SearchBar"
+        android:scaleType="centerInside"
+        android:background="#ffffe0"
+        android:src="@drawable/microphone" />
+
+    <ImageButton
+        android:id="@+id/ShoppingCart"
+        android:layout_width="40dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toEndOf="@id/Talk"
+        android:layout_marginStart="5dp"
+        app:layout_constraintBottom_toBottomOf="@id/SearchBar"
+        app:layout_constraintTop_toTopOf="@id/SearchBar"
+        android:scaleType="centerInside"
+        android:background="#ffffe0"
+        android:src="@drawable/shopping_cart" />
+
+    <ImageButton
+        android:id="@+id/Sell"
+        android:layout_width="40dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toEndOf="@id/ShoppingCart"
+        android:layout_marginStart="7dp"
+        app:layout_constraintBottom_toBottomOf="@id/SearchBar"
+        app:layout_constraintTop_toTopOf="@id/SearchBar"
+        android:scaleType="centerInside"
+        android:background="#ffffe0"
+        android:src="@drawable/store" />
+
+    <Button
+        android:id="@+id/Vegetable"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:text="蔬菜"
+        android:textSize="25sp"
+        android:textColor="#ffffff"
+        android:textAllCaps="false"
+        app:layout_constraintTop_toBottomOf="@id/SearchBar"
+        android:layout_marginTop="50dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@drawable/button_rounde"/>
+
+    <Button
+        android:id="@+id/Crop"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:text="穀物"
+        android:textSize="25sp"
+        android:textColor="#ffffff"
+        android:textAllCaps="false"
+        app:layout_constraintTop_toBottomOf="@id/SearchBar"
+        android:layout_marginTop="50dp"
+        app:layout_constraintEnd_toStartOf="@id/Vegetable"
+        android:layout_marginEnd="25dp"
+        android:background="@drawable/button_rounde" />
+
+    <Button
+        android:id="@+id/Fruit"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:text="水果"
+        android:textSize="25sp"
+        android:textColor="#ffffff"
+        android:textAllCaps="false"
+        app:layout_constraintTop_toBottomOf="@id/SearchBar"
+        android:layout_marginTop="50dp"
+        app:layout_constraintStart_toEndOf="@id/Vegetable"
+        android:layout_marginStart="25dp"
+        android:background="@drawable/button_rounde"/>
+
+    <Button
+        android:id="@+id/DairyProduct"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:text="乳製品"
+        android:textSize="25sp"
+        android:textColor="#ffffff"
+        android:textAllCaps="false"
+        app:layout_constraintTop_toBottomOf="@id/Vegetable"
+        android:layout_marginTop="35dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@drawable/button_rounde"/>
+
+    <Button
+        android:id="@+id/Poultry"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:text="家禽"
+        android:textSize="25sp"
+        android:textColor="#ffffff"
+        android:textAllCaps="false"
+        app:layout_constraintTop_toBottomOf="@id/Vegetable"
+        android:layout_marginTop="35dp"
+        app:layout_constraintEnd_toStartOf="@id/DairyProduct"
+        android:layout_marginEnd="25dp"
+        android:background="@drawable/button_rounde"/>
+
+    <Button
+        android:id="@+id/Others"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:text="其他"
+        android:textSize="25sp"
+        android:textColor="#ffffff"
+        android:textAllCaps="false"
+        app:layout_constraintTop_toBottomOf="@id/Vegetable"
+        android:layout_marginTop="35dp"
+        app:layout_constraintStart_toEndOf="@id/DairyProduct"
+        android:layout_marginStart="25dp"
+        android:background="@drawable/button_rounde"/>
+
+    <TextView
+        android:id="@+id/TextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center|bottom"
+        android:text="離你最近的商品"
+        android:textSize="30sp"
+        app:layout_constraintTop_toBottomOf="@id/DairyProduct"
+        android:layout_marginTop="50dp"
+        android:paddingTop="10dp"
+        android:background="#ffddaa" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:scrollbars="horizontal"
+        android:fadeScrollbars="false"
+        app:layout_constraintTop_toBottomOf="@id/TextView"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:background="#ffddaa">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
